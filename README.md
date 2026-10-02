@@ -12,18 +12,24 @@ App nativa de macOS para **leer y escribir Markdown y texto plano** de forma rá
 - **Abrir**: arrastrar un `.md`/`.txt` a la ventana o al Dock, `⌘P` por nombre, o abrir una carpeta. Enlaces relativos entre `.md` (`⌘-clic`).
 - **Exportar** a PDF o HTML, búsqueda con `⌘F`, ruta del archivo siempre visible.
 
-## Requisitos
+## Instalar (sin Xcode)
 
-macOS 13 o superior y las herramientas de Swift (Xcode o Command Line Tools, Swift 5.9+).
+Requisitos: **macOS 13 o superior** (Intel o Apple Silicon). No hace falta Xcode ni Swift.
 
-## Compilar y abrir
+1. Descarga [`VisualizadorGC-macOS.zip`](https://github.com/giancode1/md_visualizer_simply/releases/latest/download/VisualizadorGC-macOS.zip) desde [Releases](https://github.com/giancode1/md_visualizer_simply/releases/latest).
+2. Descomprímelo y mueve `VisualizadorGC.app` a *Aplicaciones*.
+3. La primera vez macOS la bloqueará porque no está notarizada por Apple: clic derecho sobre la app › *Abrir* (en macOS 15: *Ajustes del Sistema › Privacidad y seguridad › Abrir de todos modos*). También sirve en Terminal: `xattr -dr com.apple.quarantine /Applications/VisualizadorGC.app`.
+
+## Compilar desde el código
+
+Requisitos: macOS 13+ y **Xcode o Command Line Tools** (Swift 5.9+).
 
 ```bash
 ./build.sh
 open VisualizadorGC.app
 ```
 
-Genera `VisualizadorGC.app` (muévela a `/Applications` si quieres). Si tienes un certificado *Apple Development* la firma con él; si no, usa firma ad-hoc.
+`build.sh` firma la app con tu certificado *Apple Development* si lo encuentra y, si no, usa firma ad-hoc.
 
 ## Atajos
 
