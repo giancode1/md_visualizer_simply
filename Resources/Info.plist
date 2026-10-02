@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>es</string>
+    <key>CFBundleLocalizations</key>
+    <array><string>es</string></array>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
+    <key>CFBundleName</key>
+    <string>VisualizadorGC</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.local.visualizadorgc</string>
+    <key>CFBundleExecutable</key>
+    <string>VisualizadorGC</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>NSHighResolutionCapable</key>
+    <true/>
+    <key>LSMinimumSystemVersion</key>
+    <string>13.0</string>
+    <key>CFBundleDocumentTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeName</key>
+            <string>Markdown</string>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>NSDocumentClass</key>
+            <string>MarkdownDocument</string>
+            <key>LSHandlerRank</key>
+            <string>Default</string>
+            <key>LSItemContentTypes</key>
+            <array><string>net.daringfireball.markdown</string></array>
+            <key>CFBundleTypeExtensions</key>
+            <array><string>md</string><string>markdown</string></array>
+        </dict>
+        <dict>
+            <key>CFBundleTypeName</key>
+            <string>Texto plano</string>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>NSDocumentClass</key>
+            <string>MarkdownDocument</string>
+            <key>LSHandlerRank</key>
+            <string>Alternate</string>
+            <key>LSItemContentTypes</key>
+            <array><string>public.plain-text</string></array>
+            <key>CFBundleTypeExtensions</key>
+            <array><string>txt</string></array>
+        </dict>
+        <dict>
+            <key>CFBundleTypeName</key>
+            <string>Carpeta</string>
+            <key>CFBundleTypeRole</key>
+            <string>Viewer</string>
+            <key>LSHandlerRank</key>
+            <string>None</string>
+            <key>LSItemContentTypes</key>
+            <array><string>public.folder</string></array>
+        </dict>
+    </array>
+</dict>
+</plist>
